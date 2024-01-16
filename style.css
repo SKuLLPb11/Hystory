@@ -1,0 +1,423 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;   
+
+}
+body{
+    background-color:rgba(255, 255, 255, 0.19);
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(39, 70, 149, 0.7),rgba(24, 30, 4, 0.7)),url('pics/main1.jpg');
+    background-position: centre;
+    background-size:cover;
+    position:relative;
+    
+
+}
+
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content:space-between;
+    align-items:center;
+   
+   
+}
+nav img{
+    width: 100px;
+
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+
+}
+
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  
+}
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background: #f79c4d;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+    
+
+
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.text-box{
+    width: 90%;
+    color:#fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size:16px ;
+    color:#fff;
+    
+
+}
+nav .fa{
+    display: none;    
+}
+@media(max-width:700px)
+{
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position:absolute;
+        background: #d85065;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color:rgb(9, 5, 21);
+        margin:10px;
+        size-adjust: 25px;
+        cursor: pointer;
+
+    }
+
+}
+.countries
+{
+    width: 80%;
+    margin: auto;
+    text-align: centre;
+    padding-top: 50px;
+    
+    
+
+}
+.countries h1{
+    display:block;
+    text-align: center;
+    font-size: 35px;
+    
+}
+.countries p{
+    text-align: center;
+    font-size: 20px;
+}
+.c{
+    flex-basis: 32%;
+    border-radius:px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow:hidden;
+    display:flex;
+   
+
+   
+
+
+    
+}
+.c img{
+    width:100%;
+    height: 500px;
+   
+}
+.c1{
+    background:transparent;
+    height: 500px;
+    width:100%;
+    position: absolute;  
+    text-align: center;
+    transition:0.5s;
+    
+    
+}
+.c1:hover{
+    background:rgba(192, 62, 62, 0.27);
+}
+
+.c1 h3{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.c1 a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+.c1 a::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background: #f79c4d;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.c1 a:hover::after{
+    width: 100%;
+
+}
+.about h3 {
+    text-align: center;
+    font-size: 30px;
+
+}
+.about p{
+    text-align: center;
+    font-size: 12px;
+}
+.about h4{
+    
+    font-size: 22px;
+    text-align: center;
+}
+/* *********************COUNTRY:1 INDIA**************************** */
+.text1 h1{
+    text-align: center;
+    padding: auto;
+    font-size: 40px;
+    
+
+}
+.text1 h3{
+    text-align: center;
+    font-size: 25px;
+}
+.text1 p
+{
+    text-align: center;
+}
+.img
+{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  
+}
+.text2 h1{
+    text-align: center;
+    font-size: 25px;
+}
+.text2 p
+{
+    text-align: center;
+}
+
+.column1 {
+    float: left;
+    width: 30%;
+    padding:15px;
+
+  }
+  .row1{
+    padding-left: 25px;
+  }
+  
+
+  .row1::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+  }
+
+
+
+
+
+
+
+  /* ****************************************About******************************* */
+.header1{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(39, 70, 149, 0.7),rgba(24, 30, 4, 0.7)),url('logoc/india7.jpg');
+    background-position: centre;
+    background-size:cover;
+    position:relative; 
+
+}
+.header2{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(39, 70, 149, 0.7),rgba(24, 30, 4, 0.7)),url('logoc/greece7.jpg');
+    background-position: centre;
+    background-size:cover;
+    position:relative; 
+
+}
+.header3{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(39, 70, 149, 0.7),rgba(24, 30, 4, 0.7)),url('logoc/thai6.jpg');
+    background-position: centre;
+    background-size:cover;
+    position:relative; 
+
+
+}
+.header4{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(39, 70, 149, 0.7),rgba(24, 30, 4, 0.7)),url('logoc/spain6.jpg');
+    background-position: centre;
+    background-size:cover;
+    position:relative; 
+
+
+}
+.header5{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(39, 70, 149, 0.7),rgba(24, 30, 4, 0.7)),url('logoc/port6.jpg');
+    background-position: centre;
+    background-size:cover;
+    position:relative; 
+
+}
+
+
+
+.header6{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(39, 70, 149, 0.7),rgba(24, 30, 4, 0.7)),url('logoc/germ.jpg');
+    background-position: centre;
+    background-size:cover;
+    position:relative; 
+
+}
+.header7{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(39, 70, 149, 0.7),rgba(24, 30, 4, 0.7)),url('logoc/japan.jpg');
+    background-position: centre;
+    background-size:cover;
+    position:relative; 
+
+}
+.header8{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(39, 70, 149, 0.7),rgba(24, 30, 4, 0.7)),url('logoc/uk.jpg');
+    background-position: centre;
+    background-size:cover;
+    position:relative; 
+
+}
+.header9{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(39, 70, 149, 0.7),rgba(24, 30, 4, 0.7)),url('logoc/italy.jpg');
+    background-position: centre;
+    background-size:cover;
+    position:relative; 
+
+}
+.header10{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(39, 70, 149, 0.7),rgba(24, 30, 4, 0.7)),url('logoc/china7.jpg');
+    background-position: centre;
+    background-size:cover;
+    position:relative; 
+}
+.header11{
+    min-height: 5vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(39, 70, 149, 0.7),rgba(24, 30, 4, 0.7)),url("pics/main1.jpg");
+    background-position: centre;
+    background-size:cover;
+    position:relative; 
+
+}
+
+/* **************************disclaimer************************* */
+.disc h1{
+    text-align: center;
+    font-size: 30px;
+}
+.disc h2{
+    text-align: center;
+    font-size: 30px;
+}
+.disc p{
+    text-align: center;
+    font-size: 20px;
+}
+/* **************************************************privacy****************************** */
+.privacy h1{
+    text-align: center;
+    font-size: 30px;
+}
+.privacy h2{
+    text-align: center;
+    font-size: 30px;
+}
+.privacy p{
+    text-align: center;
+    font-size: 20px;
+}
+/* ************************************About*************************************** */
+.about h1{
+    text-align: center;
+    font-size: 30px;
+}
+.about h2{
+    margin-left: 100px;
+    font-size: 30px;
+}
+.about p{
+    text-align: center;
+    font-size: 20px;
+}
+.footer {
+    width:100%;
+    text-align:center;
+    font-weight:600;
+}
+.icons .fa{
+    margin:0 13px;
+    color:#f44336;
+    cursor: pointer;
+    padding:18px 0;
+    
+}
